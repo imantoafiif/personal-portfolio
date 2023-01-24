@@ -6,7 +6,7 @@
     height: 300px;
     text-align: center;
     position: relative;
-    background-image: url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82);
+    background:linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82);
     background-size: contain;
 }
 
@@ -85,7 +85,7 @@
     padding: 15px;
     border: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 50px;
     width: 200px;
     background: rgba(10, 10, 10, .8);

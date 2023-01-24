@@ -6,8 +6,10 @@ const Home = () => {
   const socmeds = [
     { src: 'https://github.com/imantoafiif', logo: '/github-logo.png', alt: 'github' },
     { src: 'https://id.linkedin.com/in/afiif-imanto-a46a7314b', logo: '/linkedin.png', alt: 'linkedin' },
-    { src: 'https://www.instagram.com/imantoafiif', logo: '/instagram.png', alt: 'instagram' },
-    { src: 'https://www.facebook.com/imanto.afiif', logo: '/facebook.png', alt: 'facebook' },
+    // { src: 'https://www.instagram.com/imantoafiif', logo: '/instagram.png', alt: 'instagram' },
+    // { src: 'https://www.facebook.com/imanto.afiif', logo: '/facebook.png', alt: 'facebook' },
+    { src: 'mailto:imantoafiif@gmail.com', logo: '/gmail.png', alt: 'gmail' },
+    { src: 'https://t.me/imantoafiif', logo: '/telegram.png', alt: 'telegram' },
   ]
 
   return (

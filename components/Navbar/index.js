@@ -4,9 +4,9 @@ const Navbar = () => {
     return (
         <nav className={style.container}>
             <div className={style.navbar_logo}>
-                <span className={style.logo}>
+                <label className={style.logo}>
                     LOGO_TEMPLATE
-                </span>
+                </label>
             </div>
             <div className={style.navbar_menus}>
                 <ul>
