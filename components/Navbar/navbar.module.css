@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #fcfcfc;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-logo {
+    width: 40px;
+    margin-left: 55%;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar_menus {
+    display: inline;
+    text-align: right;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.navbar_menus ul {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-right: 2%;
+}
+
+.navbar_menus ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar_menus ul li a {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
