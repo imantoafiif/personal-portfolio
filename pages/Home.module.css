@@ -6,6 +6,8 @@
     height: 300px;
     text-align: center;
     position: relative;
+    background-image: url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82);
+    background-size: contain;
 }
 
 .avatar {
@@ -16,13 +18,13 @@
     border-radius: 50%;
     position: relative;
     border: 10px solid #fff;
-    box-shadow: 0px 0px 15px 5px #d3d3d3;
+    box-shadow: 0px 0px 15px 5px rgba(50, 50, 50, .4);
 }
 
 .body_content {
     padding-top: 50px;
     text-align: center;
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
 .title {
@@ -71,6 +73,7 @@
     gap: 10px;
     padding: 10px 0;
     right: 10px;
+    bottom: -50px;
 }
 
 .socmed_container a img {
