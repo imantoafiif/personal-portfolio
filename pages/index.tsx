@@ -11,8 +11,31 @@ const Home = () => {
             className={style.avatar} 
             src='https://media.licdn.com/dms/image/D5603AQFBH48M5DNceQ/profile-displayphoto-shrink_800_800/0/1671704555138?e=1680134400&v=beta&t=HhKFh-Z1lKgfx0L9xx4jlNSjC_KgvSKTS0UlLBg_5Lc'>
           </img>
+          <div className={style.socmed_container}>
+            <a
+              href='https://github.com/imantoafiif' 
+              target="_blank">
+              <img src='/github-logo.png'></img>
+            </a>
+            <a
+              href='https://id.linkedin.com/in/afiif-imanto-a46a7314b' 
+              target="_blank">
+              <img src='/linkedin.png'></img>
+            </a>
+            <a
+              href='https://www.instagram.com/imantoafiif' 
+              target="_blank">
+              <img src='/instagram.png'></img>
+            </a>
+            <a
+              href='https://www.facebook.com/imanto.afiif' 
+              target="_blank">
+              <img src='/facebook.png'></img>
+            </a>
+          </div>
         </section>
         <section className={style.body_content}>
+        
           <h2 className={style.title}>
             M. AFIIF IMANTO
           </h2>
