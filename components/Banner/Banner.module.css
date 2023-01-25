@@ -5,5 +5,5 @@
     text-align: center;
     position: relative;
     background:linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82);
-    background-size: contain;
+    background-size: cover;
 }

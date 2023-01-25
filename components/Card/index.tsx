@@ -14,9 +14,13 @@ const Card = ({ item }: props) => {
                     src={item.src}>
                 </img>
             </div>
-            
-            <div>
-
+            <div className={style.title_container}>
+                <h3 className={style.title}>
+                    { item.title }
+                </h3>
+                <p className={style.card_description}>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
             </div>
         </a>
     )

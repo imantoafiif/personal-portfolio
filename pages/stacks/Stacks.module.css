@@ -1,6 +1,6 @@
 .collections {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
     width: 90%;
     align-items: center;
     margin: 0 auto;
@@ -9,3 +9,15 @@
     gap: 15px;
 }
 
+.footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background: #1f203a;
+    color: white;
+    text-align: center;
+}
+
+.react_small {
+    width: 18px;
+}
