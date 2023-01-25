@@ -9,16 +9,30 @@
     width: 100%;
 }
 
-.navbar-logo {
+.navbar_logo {
     width: 40px;
-    margin-left: 55%;
     font-weight: bold;
 }
 
+.logo_container {
+    text-decoration: none;
+}
+
 .logo {
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
     font-family: 'Roboto', 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: large;
+    letter-spacing: .01em;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.logo_last {
+    color: #2481cc;
 }
 
 .navbar_menus {

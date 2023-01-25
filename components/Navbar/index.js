@@ -1,19 +1,35 @@
-import style from './navbar.module.css'
+import Link from 'next/link';
+import style from './Navbar.module.css'
 
 const Navbar = () => {
+
+    const menus = [
+        { label: 'About', url: '/' },
+        { label: 'Stacks', url: '/stacks' },
+        { label: 'Experiences', url: '/experiences' },
+        { label: 'Projects', url: '/projects' },
+    ]
+
     return (
         <nav className={style.container}>
             <div className={style.navbar_logo}>
-                <label className={style.logo}>
-                    LOGO_TEMPLATE
-                </label>
+                <Link className={style.logo_container} href="/">
+                    <label className={style.logo}>AFIIF</label>&nbsp;
+                    <span className={style.logo}>·</span>&nbsp;
+                    <label className={`${style.logo} ${style.logo_last}`}>IMANTO</label>&nbsp;   
+                </Link>           
             </div>
             <div className={style.navbar_menus}>
                 <ul>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Stacks</a></li>
-                    <li><a href='#'>Experiences</a></li>
-                    <li><a href='#'>Projects</a></li>
+                    {
+                        menus.map(item => (
+                            <li key={item.label}>
+                                <Link href={item.url}>
+                                    { item.label }
+                                </Link>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         </nav>
