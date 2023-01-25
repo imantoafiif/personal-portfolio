@@ -4,11 +4,11 @@ interface props {
     children: JSX.Element
 }
 
-const Banner = ({ children }: props) => {
+const Banner = ({ children = null }: props) => {
     return (
-        <section className={style.container}>
+        <div className={style.container}>
            { children }
-        </section>
+        </div>
     )
 }
 
