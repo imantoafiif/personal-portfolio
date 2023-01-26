@@ -6,7 +6,9 @@ interface props {
 
 const Card = ({ item }: props) => {
     return (
-        <a href='/google.com' className={style.card}>
+        <a 
+            target="_blank"
+            href='https://google.com' className={style.card}>
             <div className={style.image_container}>
                 <img
                     alt='img'

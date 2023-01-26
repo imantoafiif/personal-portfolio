@@ -1,12 +1,12 @@
 .collections {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    width: 90%;
+    width: 95%;
     align-items: center;
     margin: 0 auto;
-    position: relative;
-    top: 45px;
-    gap: 15px;
+    /* position: relative; */
+    top: 40px;
+    padding: 2.7%;
 }
 
 .footer {
@@ -20,4 +20,13 @@
 
 .react_small {
     width: 18px;
+}
+
+.cok {
+}
+
+.body_content {
+    /* padding-top: 65px; */
+    text-align: center;
+    min-height: 70vh;
 }
