@@ -25,7 +25,9 @@ const Stacks = () => {
                 <>
                     <div className={style.header}>
                         <h1 className={style.title}>My Stacks</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        <p className={style.subtitle}>
+                            Whether it be for work, freelancing, or just way to pass times, these are some of my favorite stacks for creating apps and frontend solutions 
+                        </p>
                     </div>
                     {/* <p className={style.subheader}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
