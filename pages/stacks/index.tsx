@@ -23,7 +23,14 @@ const Stacks = () => {
             <Navbar></Navbar>
             <Banner>
                 <>
-                    {/* <h1>a;jsd</h1> */}
+                    <div className={style.header}>
+                        <h1 className={style.title}>My Stacks</h1>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    </div>
+                    {/* <p className={style.subheader}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        </p> */}
+                    
                     <div className={style.collections}>
                         {
                             cards.map(item => (

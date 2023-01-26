@@ -1,12 +1,32 @@
 .collections {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 95%;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
     align-items: center;
     margin: 0 auto;
     /* position: relative; */
     top: 40px;
-    padding: 2.7%;
+    /* padding: 2.7%; */
+}
+
+.header {
+    margin: 0 auto;
+    padding: 15px;
+    color: white;
+    /* background: rgba(0, 0, 0, .3); */
+    font-weight: 400;
+    margin: 0 25%;
+    font-size: large;
+}
+
+.title {
+    text-shadow: 0 0 16px #0000003d;
+}
+
+.subheader {
+    color: white;
+    margin: 0;
+    /* margin: 25px 80px; */
 }
 
 .footer {
