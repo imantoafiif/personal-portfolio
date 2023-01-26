@@ -8,7 +8,7 @@ const Card = ({ item }: props) => {
     return (
         <a 
             target="_blank"
-            href='https://google.com' className={style.card}>
+            href={item.url} className={style.card}>
             <div className={style.image_container}>
                 <img
                     alt='img'
