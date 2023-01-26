@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import style from './Navbar.module.css'
+import style from './navbar.module.css'
 
 const Navbar = () => {
 
@@ -24,7 +24,9 @@ const Navbar = () => {
                     {
                         menus.map(item => (
                             <li key={item.label}>
-                                <Link href={item.url}>
+                                <Link 
+                                    className={style.link}
+                                    href={item.url}>
                                     { item.label }
                                 </Link>
                             </li>

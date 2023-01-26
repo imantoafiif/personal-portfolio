@@ -15,8 +15,8 @@ const Home = () => {
 
   return (
     <>
-      <main className={style.main_content}>
       <Navbar></Navbar>
+      <main className={style.main_content}>
 
         <Banner>
           <>
@@ -29,6 +29,7 @@ const Home = () => {
               {
                 socmeds.map(item => (
                   <a
+                    className={style.socmed}
                     href={item.src} 
                     target="_blank">
                     <img 
@@ -45,7 +46,7 @@ const Home = () => {
         <section className={style.body_content}>
         
           <h2 className={style.title}>
-            M. AFIIF IMANTO
+            Hi, i'm Afiif Imanto
           </h2>
           <h1 className={style.subtitle}>
             FRONTEND&nbsp;

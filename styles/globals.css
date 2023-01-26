@@ -3,7 +3,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

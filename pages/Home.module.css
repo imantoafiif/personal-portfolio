@@ -21,8 +21,18 @@
     margin-bottom: 0;
     font-size: 40px;
     letter-spacing: -.025em;
-    font-weight: 500;
-    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: 600;
+    /* font-family: 'Arial', 'Courier New', Courier, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.socmed {
+    transition: all ease .2s;
+}
+
+.socmed:hover {
+    scale: calc(1.1);
 }
 
 .subtitle {
