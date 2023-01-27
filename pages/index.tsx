@@ -17,7 +17,6 @@ const Home = () => {
     <>
       <Navbar></Navbar>
       <main className={style.main_content}>
-
         <Banner>
           <>
             <img

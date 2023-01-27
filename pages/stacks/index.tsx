@@ -2,6 +2,7 @@ import Banner from "../../components/Banner"
 import Card from "../../components/Card"
 import Navbar from "../../components/Navbar"
 import style from './Stacks.module.css'
+import Footer from '../../components/Footer'
 
 const Stacks = () => {
 
@@ -29,10 +30,8 @@ const Stacks = () => {
                             Whether it be for work, freelancing, or just way to pass times, these are some of my favorite stacks for creating apps and frontend solutions 
                         </p>
                     </div>
-                    {/* <p className={style.subheader}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        </p> */}
-                    
+                    {/* <h1>aksdjl</h1> */}
+
                     <div className={style.collections}>
                         {
                             cards.map(item => (
@@ -40,20 +39,7 @@ const Stacks = () => {
                             ))
                         }
                     </div>
-                    <footer className={style.footer}>
-                        2023. Coded with ☕ and ❤️ using&nbsp;&nbsp;
-                        <svg
-                            className={style.react_small} 
-                            xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">
-                            <title>React Logo</title>
-                            <circle cx="0" cy="0" r="2.05" fill="#61dafb"/>
-                            <g stroke="#61dafb" stroke-width="1" fill="none">
-                            <ellipse rx="11" ry="4.2"/>
-                            <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
-                            <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
-                            </g>
-                        </svg>
-                    </footer>
+                    <Footer></Footer>
                 </>
             </Banner>
         </>

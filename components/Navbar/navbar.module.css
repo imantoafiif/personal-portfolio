@@ -6,7 +6,6 @@
     background-color: #fcfcfc;
     padding: 20px;
     align-items: center;
-    width: 100%;
 }
 
 .navbar_logo {
@@ -26,10 +25,27 @@
     font-weight: bold;
     font-size: large;
     letter-spacing: .01em;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+/* .logo {
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: .01em;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing: 2px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    padding: 5px;
+} */
 
 .logo_last {
     color: #2481cc;
