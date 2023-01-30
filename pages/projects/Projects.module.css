@@ -1,0 +1,47 @@
+.collections {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    /* position: relative; */
+    top: 40px;
+    /* padding: 2.7%; */
+    margin-bottom: 24px;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 15px;
+    color: white;
+    /* background: rgba(0, 0, 0, .3); */
+    font-weight: 400;
+    margin: 0 25%;
+}
+
+.subtitle {
+    font-size: large;
+    text-shadow: 0 0 16px #0000003d;
+}
+
+.thumbnail {
+    background-image: url('https://muhammadmubeen17.github.io/simple-portfolio-website/images/Section-3-image-1.jpg');
+}
+
+.title {
+    text-shadow: 0 0 16px #0000003d;
+}
+
+.card_title {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 0px 8px 5px rgba(50, 50, 50, .1);
+}
