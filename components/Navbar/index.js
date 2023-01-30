@@ -6,7 +6,7 @@ const Navbar = () => {
     const menus = [
         { label: 'About', url: '/' },
         { label: 'Stacks', url: '/stacks' },
-        { label: 'Experiences', url: '/experiences' },
+        { label: 'Work', url: '/work' },
         { label: 'Projects', url: '/projects' },
     ]
 

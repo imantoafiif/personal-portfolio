@@ -8,3 +8,39 @@ body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
 }
+
+.is-marginless {
+  margin: 0;
+}
+
+.is-paddingless {
+  padding: 0;
+}
+
+.is-marginless-top {
+  margin-top: 0;
+}
+
+.is-paddingless-top {
+  padding-top: 0;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.is-pulled-right {
+  text-align: right;
+}
+
+.smaller {
+  font-size: smaller;
+}

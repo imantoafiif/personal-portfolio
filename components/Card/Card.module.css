@@ -16,7 +16,7 @@
 }
 
 .title_container {
-    padding: 24px;
+    padding: 20px;
     color: black;
 }
 
@@ -33,6 +33,8 @@
 }
 
 .card_description {
+    margin: 0;
+    text-align: justify;
 }
 
 .image {
