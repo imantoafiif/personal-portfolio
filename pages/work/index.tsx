@@ -12,6 +12,7 @@ const Experience = () => {
         url: string,
         date: string,
         role: string,
+        desc: string,
     }
 
     const companies:ReadonlyArray<company> = [
@@ -21,6 +22,7 @@ const Experience = () => {
             url: 'https://www.telkomsigma.co.id/',
             date: 'April 2019 - Present',
             role: 'Frontend Engineer',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         },
         { 
             thumb: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Alcatel_Lucent_Enterprise_Logo.svg', 
@@ -28,13 +30,15 @@ const Experience = () => {
             url: 'https://www.al-enterprise.com/',
             date: 'Jan 2018 - Mar 2018',
             role: 'Fullstack Engineer',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         },
         { 
             thumb: 'https://maxsi.id/web/wp-content/uploads/2021/07/logo-telkomsel-baru.png', 
             title: 'Telkomsel', 
             url: 'https://www.telkomsel.com',
             date: 'Jan 2016 - Feb 2016',
-            role: 'Android App Developer'
+            role: 'Android App Developer',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         }
     ]
 
@@ -59,9 +63,7 @@ const Experience = () => {
                                         <>
                                             <h4 className="is-marginless">{ c.role }</h4>
                                             <h4 className="is-marginless-top normal smaller">{ c.date }</h4>
-                                            <p className="is-marginless is-paddingless">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit                                            
-                                            </p>
+                                            <p className="is-marginless is-paddingless">{ c.desc }</p>
                                         </>
                                     </Card>
                                 )

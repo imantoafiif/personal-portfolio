@@ -8,6 +8,7 @@ const Navbar = () => {
         { label: 'Stacks', url: '/stacks' },
         { label: 'Work', url: '/work' },
         { label: 'Projects', url: '/projects' },
+        
     ]
 
     return (
