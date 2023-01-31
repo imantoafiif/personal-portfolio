@@ -29,7 +29,7 @@ const Experience = () => {
             title: 'Alcatel-Lucent Enterprise', 
             url: 'https://www.al-enterprise.com/',
             date: 'Jan 2018 - Mar 2018',
-            role: 'Fullstack Engineer',
+            role: 'Fullstack Web Developer',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         },
         { 

@@ -23,12 +23,15 @@ const Card = ({ children = null, item }: props) => {
             href={item.url} 
             className={style.card}>
             <div className={style.image_container}>
-                <img
-                    id={`im-1`}
-                    alt='img'
-                    className={style.image} 
-                    src={item.thumb}>
-                </img>
+                { 
+                    [
+                        <img
+                            alt='img'
+                            className={style.image} 
+                            src={item.thumb}>
+                        </img>,
+                    ]
+                }
             </div>
             {
                 children && (
