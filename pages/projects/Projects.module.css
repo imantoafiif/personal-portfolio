@@ -1,6 +1,6 @@
 .collections {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 33% 33% 33%;
     width: 80%;
     align-items: center;
     margin: 0 auto;
@@ -8,6 +8,12 @@
     top: 40px;
     /* padding: 2.7%; */
     margin-bottom: 24px;
+    row-gap: 24px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 .header {
@@ -44,4 +50,18 @@
     border-radius: 10px;
     background: white;
     box-shadow: 0px 0px 8px 5px rgba(50, 50, 50, .1);
+}
+
+.vendor {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.106);
+    border-radius: 50%;
+    object-fit: contain;
+    padding: 3px;
+}
+
+.project {
+    text-align: left;
+    padding-left: 5px;
 }

@@ -10,7 +10,8 @@ const Card = ({ children = null, item }: props) => {
     return (
         <a 
             target="_blank"
-            href={item.url} className={style.card}>
+            href={item.url} 
+            className={style.card}>
             <div className={style.image_container}>
                 <img
                     alt='img'
