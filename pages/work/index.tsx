@@ -56,10 +56,12 @@ const Experience = () => {
                     </div>
                     <div className={style.collections}>
                         {
-                            companies.map(c => {
+                            companies.map((c, key) => {
                                 let { thumb, title, url } = c
                                 return (
-                                    <Card item={{ thumb, title, url }}>
+                                    <Card 
+                                        key={key}
+                                        item={{ thumb, title, url }}>
                                         <>
                                             <h4 className="is-marginless">{ c.role }</h4>
                                             <h4 className="is-marginless-top normal smaller">{ c.date }</h4>

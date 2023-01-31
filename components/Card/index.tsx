@@ -1,5 +1,6 @@
 import { Children } from 'react'
 import style from './Card.module.css'
+import React from 'react'
 
 interface props {
     children?: JSX.Element | null,
@@ -7,6 +8,15 @@ interface props {
 }
 
 const Card = ({ children = null, item }: props) => {
+
+    // React.useEffect(() => {
+    //     let img = document.getElementById("im-1")
+    //     img.classList.add(style.image)
+    //     return {
+
+    //     }
+    // }, [])
+
     return (
         <a 
             target="_blank"
@@ -14,6 +24,7 @@ const Card = ({ children = null, item }: props) => {
             className={style.card}>
             <div className={style.image_container}>
                 <img
+                    id={`im-1`}
                     alt='img'
                     className={style.image} 
                     src={item.thumb}>

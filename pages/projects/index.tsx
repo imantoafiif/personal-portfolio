@@ -48,6 +48,15 @@ const Project = () => {
         },
         { 
             thumb: 'https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/lorem-ipsum/1.3.1/1640026564395/Microsoft.VisualStudio.Services.Icons.Default', 
+            title: 'Official Travel Document Manager',
+            url: null,
+            vendor: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPT5oP76HKC-wNB1bNSrpB2Ga-r3GY9DVXwg&usqp=CAU',
+            company: 'Pegadaian',
+            date: 'Jul 2020 - Dec 2020',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur',
+        },
+        { 
+            thumb: 'https://tyriar.gallerycdn.vsassets.io/extensions/tyriar/lorem-ipsum/1.3.1/1640026564395/Microsoft.VisualStudio.Services.Icons.Default', 
             title: 'Integrated Talent Management System',
             url: null,
             vendor: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/CMYK_LOGO-01_pngs.png',
@@ -116,8 +125,10 @@ const Project = () => {
                     </div>
                     <div className={style.collections}>
                         {
-                            projects.map(item => (
-                                <Card item={item}>
+                            projects.map((item, key) => (
+                                <Card
+                                    key={key} 
+                                    item={item}>
                                     <>
                                         <div className={style.container}>
                                             <div>
