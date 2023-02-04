@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap');
 
 .container {
-    display: grid;
+    display: grid; 
     grid-template-columns: 20% 80%;
     background-color: #fcfcfc;
     padding: 20px;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar_logo {
@@ -18,7 +22,7 @@
 }
 
 .logo {
-    color: black;
+    color: white;
     cursor: pointer;
     text-transform: uppercase;
     font-family: 'Roboto', 'Courier New', Courier, monospace;
@@ -48,7 +52,8 @@
 } */
 
 .logo_last {
-    color: #2481cc;
+    /* color: #2481cc; */
+    color: white;
 }
 
 .navbar_menus {
@@ -74,7 +79,37 @@
 .link {
     height: 100%;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: ease .2s;
     text-shadow: none;
+}
+
+.burger {
+    width: 26px;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.burger_button {
+    display: inline !important;
+}
+
+.menus {
+    display: none !important;
+}
+
+@media screen and (min-width: 992px) {
+    .burger_button {
+        display: none !important;
+    }
+
+    .menus {
+        display: inline !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .logo_container {
+        display: none;
+    }
 }
