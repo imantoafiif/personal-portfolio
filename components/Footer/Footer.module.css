@@ -4,6 +4,9 @@
     background: #1f203a;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .react_small {

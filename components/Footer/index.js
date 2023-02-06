@@ -3,7 +3,7 @@ import style from './Footer.module.css'
 const Footer = () => {
     return (
         <footer className={style.footer}>
-            2023. Coded with ☕ and ❤️ using&nbsp;&nbsp;
+            2023. Coded with ☕ and ❤️ using&nbsp;
             <svg
                 className={style.react_small} 
                 xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">

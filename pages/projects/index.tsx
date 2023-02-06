@@ -133,16 +133,14 @@ const Project = () => {
                                     item={item}>
                                     <>
                                         <div className={style.container}>
-                                            <div>
-                                                <img 
-                                                    className={style.vendor}
-                                                    src={item.vendor || item.thumb} >
-                                                </img>
-                                            </div>
+                                            <img 
+                                                className={style.vendor}
+                                                src={item.vendor || item.thumb} >
+                                            </img>
                                             <div className={style.project}>
                                                 <h4 className="is-marginless">{ item.title }</h4>
                                                 <h4 className="is-marginless normal">{ item.date }</h4>
-                                                <h4 className="is-marginless-top normal smaller">{ item.company }</h4>
+                                                <h4 className="is-marginless normal">{ item.company }</h4>
                                             </div>
                                         </div>
                                         <p className="is-marginless is-paddingless">{ item.desc }</p>
@@ -152,12 +150,11 @@ const Project = () => {
                         }
                     </div>
                     {/* <Footer></Footer> */}
+
+                    <Footer></Footer>
                 </>
             </Banner>
-            {/* <Footer></Footer> */}
-            {/* <footer className={style.footer}>
-                        
-            </footer> */}
+
         </>
     )
 

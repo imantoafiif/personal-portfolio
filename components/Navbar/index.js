@@ -18,7 +18,8 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className={style.container}>
+        <nav 
+        className={style.container}>
             <div className={style.navbar_logo}>
                 <Link className={style.logo_container} href="/">
                     <label className={style.logo}>AFIIF</label>&nbsp;

@@ -4,17 +4,22 @@
     display: grid; 
     grid-template-columns: 20% 80%;
     background-color: #fcfcfc;
-    padding: 20px;
     align-items: center;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
 }
 
+.container_active {
+    background: white;
+    color: black;
+}
+
 .navbar_logo {
     width: 40px;
     font-weight: bold;
+    padding: 20px;
 }
 
 .logo_container {
@@ -65,9 +70,8 @@
 
 .navbar_menus ul {
     height: 100%;
-    padding: 0;
+    padding: 20px;
     margin: 0;
-    margin-right: 2%;
 }
 
 .navbar_menus ul li {
