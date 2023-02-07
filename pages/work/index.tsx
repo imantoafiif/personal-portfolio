@@ -48,11 +48,12 @@ const Experience = () => {
             <Banner>
                 <>
                     <div className={style.header}>
-                        <h1 className={style.title}>Work</h1>
-                        <p className={style.subtitle}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                            {/* Been there, done that. These are some of the companies that i've worked on in the past 5 years. */}
-                        </p>
+                        <div className={style.header_content}>
+                            <h1 className={style.title}>Work</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </p>
+                        </div>
                     </div>
                     <div className={style.collections}>
                         {

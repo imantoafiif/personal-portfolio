@@ -31,13 +31,14 @@ const Stacks = () => {
             <Banner>
                 <>
                     <div className={style.header}>
-                        <h1 className={style.title}>My Stacks</h1>
-                        <p className={style.subtitle}>
-                            Whether it be for work, freelancing, or just way to pass times, these are some of my favorite stacks for creating apps and frontend solutions 
-                        </p>
+                        <div className={style.header_content}>
+                            <h1 className={style.title}>My Stacks</h1>
+                            <p>
+                                Whether it be for work, freelancing, or just way to pass times, these are some of my favorite stacks for creating apps and frontend solutions 
+                            </p>
+                        </div>
                     </div>
-                    {/* <h1>aksdjl</h1> */}
-
+                    {/* <h1 className={style.title}>Languages</h1> */}
                     <div className={style.collections}>
                         {
                             cards.map(item => (
@@ -45,7 +46,15 @@ const Stacks = () => {
                             ))
                         }
                     </div>
-                    <Footer></Footer>
+                    {/* <h1 className={style.title}>Languages</h1>
+                    <div className={style.collections}>
+                        {
+                            cards.map(item => (
+                                <Card item={item} />
+                            ))
+                        }
+                    </div>
+                    <Footer></Footer> */}
                 </>
             </Banner>
         </>

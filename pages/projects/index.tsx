@@ -118,10 +118,12 @@ const Project = () => {
             <Banner>
                 <>
                     <div className={style.header}>
-                        <h1 className={style.title}>Projects</h1>
-                        <p className={style.subtitle}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur
-                        </p>
+                        <div className={style.header_content}>
+                            <h1 className={style.title}>Projects</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur
+                            </p>
+                        </div>
                     </div>
                     <div className={style.collections}>
                         {
@@ -131,16 +133,14 @@ const Project = () => {
                                     item={item}>
                                     <>
                                         <div className={style.container}>
-                                            <div>
-                                                <img 
-                                                    className={style.vendor}
-                                                    src={item.vendor || item.thumb} >
-                                                </img>
-                                            </div>
+                                            <img 
+                                                className={style.vendor}
+                                                src={item.vendor || item.thumb} >
+                                            </img>
                                             <div className={style.project}>
                                                 <h4 className="is-marginless">{ item.title }</h4>
                                                 <h4 className="is-marginless normal">{ item.date }</h4>
-                                                <h4 className="is-marginless-top normal smaller">{ item.company }</h4>
+                                                <h4 className="is-marginless normal">{ item.company }</h4>
                                             </div>
                                         </div>
                                         <p className="is-marginless is-paddingless">{ item.desc }</p>
@@ -149,9 +149,12 @@ const Project = () => {
                             ))
                         }
                     </div>
+                    {/* <Footer></Footer> */}
+
                     <Footer></Footer>
                 </>
             </Banner>
+
         </>
     )
 
