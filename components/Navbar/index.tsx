@@ -16,7 +16,7 @@ const Navbar = () => {
     ]
 
     const onClick = () => {
-        const menu = document.getElementById('mobile-menu')
+        const menu = document.getElementById('mobile-menu') as HTMLElement
         if(menu.classList.contains(style.slide_up)) {
             menu.classList.remove(style.slide_up)
             return

@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import style from './Projects.module.css'
 import Modal from "../../components/Modal";
-import { useState } from "react";
+import { MouseEventHandler, useState } from "react";
 
 const Project = () => {
 
@@ -19,6 +19,8 @@ const Project = () => {
         company: string,
         vendor: string,
     }
+
+    type modal = (v:boolean) => (e:MouseEventHandler<HTMLAnchorElement>) => void
 
     const [active, setActive] = useState(false)
 
@@ -116,7 +118,7 @@ const Project = () => {
         
     ]
 
-    const setModal = event => v => {
+    const setModal:modal = v => e => {
         setActive(v)
     }
 
@@ -162,7 +164,7 @@ const Project = () => {
                     <Footer></Footer>
                 </>
             </Banner>
-            <Modal active={active}></Modal>
+            <Modal active={active} onClose={setModal(false)}></Modal>
 
         </>
     )

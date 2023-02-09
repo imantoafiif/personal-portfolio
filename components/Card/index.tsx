@@ -1,11 +1,11 @@
-import { Children } from 'react'
+import { Children, MouseEventHandler, useEffect } from 'react'
 import style from './Card.module.css'
 import React from 'react'
 
 interface props {
     children?: JSX.Element | null,
     item: any,
-    onClick: (v: Boolean) => void,
+    onClick: any,
 }
 
 const Card = ({ children = null, item, onClick }: props) => {
@@ -18,6 +18,16 @@ const Card = ({ children = null, item, onClick }: props) => {
     //     }
     // }, [])
 
+    useEffect(() => {
+        const slide = setTimeout(() => {
+            const img = document.getElementById('slide-1') as HTMLElement
+            img.classList.add(style.appear)
+        }, 2000)
+        return () => {
+            clearTimeout(slide)
+        }
+    }, [])
+
     return (
         <a 
             onClick={onClick}
@@ -28,6 +38,7 @@ const Card = ({ children = null, item, onClick }: props) => {
                 { 
                     [
                         <img
+                            id="slide-1"
                             alt='img'
                             className={style.image} 
                             src={item.thumb}>

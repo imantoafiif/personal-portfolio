@@ -5,10 +5,10 @@ import {
 import { useEffect } from "react";
 import style from './mobile.module.scss'
 
-const MobileMenu = ({ active = false, menus }) => {
+const MobileMenu = ({ active = false }) => {
 
     useEffect(() => {
-        const menu = document.getElementById('mobile-menu')
+        const menu = document.getElementById('mobile-menu') as HTMLElement
         if(active) {
             menu.classList.add(style.slide)
             return
