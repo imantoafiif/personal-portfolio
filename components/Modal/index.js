@@ -14,7 +14,6 @@ const Modal = ({ active }) => {
 
     return ( 
         <div
-            onClick={}
             id="modal-container"    
             className={style.background}>
             
