@@ -5,7 +5,7 @@ import React from 'react'
 interface props {
     children?: JSX.Element | null,
     item: any,
-    onClick: any,
+    onClick?: any,
 }
 
 const Card = ({ children = null, item, onClick }: props) => {
