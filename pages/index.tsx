@@ -43,7 +43,7 @@ const Home = () => {
           </>
         </Banner>          
         <section className={style.body_content}>
-        
+
           <h2 className={style.title}>
             Hi, i'm Afiif Imanto
           </h2>

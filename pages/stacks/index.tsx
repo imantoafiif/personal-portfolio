@@ -55,6 +55,7 @@ const Stacks = () => {
                         }
                     </div>
                     <Footer></Footer> */}
+                    <Footer></Footer>
                 </>
             </Banner>
         </>

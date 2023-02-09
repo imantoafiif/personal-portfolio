@@ -5,6 +5,8 @@ import Card from "../../components/Card";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import style from './Projects.module.css'
+import Modal from "../../components/Modal";
+import { useState } from "react";
 
 const Project = () => {
 
@@ -17,6 +19,8 @@ const Project = () => {
         company: string,
         vendor: string,
     }
+
+    const [active, setActive] = useState(false)
 
     const projects:ReadonlyArray<card> = [
         { 
@@ -112,6 +116,10 @@ const Project = () => {
         
     ]
 
+    const setModal = event => v => {
+        setActive(v)
+    }
+
     return (
         <>
             <Navbar></Navbar>
@@ -129,6 +137,7 @@ const Project = () => {
                         {
                             projects.map((item, key) => (
                                 <Card
+                                    onClick={setModal(true)}
                                     key={key} 
                                     item={item}>
                                     <>
@@ -143,17 +152,17 @@ const Project = () => {
                                                 <h4 className="is-marginless normal">{ item.company }</h4>
                                             </div>
                                         </div>
-                                        <p className="is-marginless is-paddingless">{ item.desc }</p>
+                                        <p className="is-marginless is-paddingless normal">{ item.desc }</p>
                                     </>
                                 </Card>
                             ))
                         }
                     </div>
                     {/* <Footer></Footer> */}
-
                     <Footer></Footer>
                 </>
             </Banner>
+            <Modal active={active}></Modal>
 
         </>
     )

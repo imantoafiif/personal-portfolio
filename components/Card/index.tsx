@@ -5,9 +5,10 @@ import React from 'react'
 interface props {
     children?: JSX.Element | null,
     item: any,
+    onClick: (v: Boolean) => void,
 }
 
-const Card = ({ children = null, item }: props) => {
+const Card = ({ children = null, item, onClick }: props) => {
 
     // React.useEffect(() => {
     //     let img = document.getElementById("im-1")
@@ -19,6 +20,7 @@ const Card = ({ children = null, item }: props) => {
 
     return (
         <a 
+            onClick={onClick}
             target="_blank"
             href={item.url} 
             className={style.card}>

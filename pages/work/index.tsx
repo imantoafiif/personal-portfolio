@@ -66,7 +66,7 @@ const Experience = () => {
                                         <>
                                             <h4 className="is-marginless">{ c.role }</h4>
                                             <h4 className="is-marginless-top normal smaller">{ c.date }</h4>
-                                            <p className="is-marginless is-paddingless">{ c.desc }</p>
+                                            <p className="is-marginless is-paddingless normal">{ c.desc }</p>
                                         </>
                                     </Card>
                                 )
