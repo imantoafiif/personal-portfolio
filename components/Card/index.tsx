@@ -1,4 +1,4 @@
-import { Children, MouseEventHandler, useEffect } from 'react'
+import { Children, MouseEventHandler, useEffect, useState } from 'react'
 import style from './Card.module.css'
 import React from 'react'
 
@@ -18,6 +18,8 @@ const Card = ({ children = null, item, onClick }: props) => {
     //     }
     // }, [])
 
+    const [active, setActive] = useState(0)
+
     useEffect(() => {
         const slide = setTimeout(() => {
             const img = document.getElementById('slide-1') as HTMLElement
@@ -26,7 +28,7 @@ const Card = ({ children = null, item, onClick }: props) => {
         return () => {
             clearTimeout(slide)
         }
-    }, [])
+    }, [active])
 
     return (
         <a 

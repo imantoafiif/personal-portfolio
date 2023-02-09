@@ -4,7 +4,7 @@ interface props {
     children: JSX.Element
 }
 
-const Banner = ({ children = null }: props) => {
+const Banner = ({ children }: props) => {
     return (
         <div className={style.container}>
            { children }
