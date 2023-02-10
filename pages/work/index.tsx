@@ -62,7 +62,8 @@ const Experience = () => {
                                 return (
                                     <Card 
                                         key={key}
-                                        item={{ thumb, title, url }}>
+                                        item={{ thumb, title, url }}
+                                        thumbCover={true}>
                                         <>
                                             <h4 className="is-marginless">{ c.role }</h4>
                                             <h4 className="is-marginless-top normal smaller">{ c.date }</h4>

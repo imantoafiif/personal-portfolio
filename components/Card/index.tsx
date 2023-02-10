@@ -6,9 +6,10 @@ interface props {
     children?: JSX.Element | null,
     item: any,
     onClick?: any,
+    thumbCover?: boolean,
 }
 
-const Card = ({ children = null, item, onClick }: props) => {
+const Card = ({ children = null, item, onClick, thumbCover = false }: props) => {
 
     const [src, setSrc] = useState(0)
 
@@ -28,13 +29,18 @@ const Card = ({ children = null, item, onClick }: props) => {
             onClick={onClick}
             target="_blank"
             href={item.url} 
-            className={style.card}>
-            <div className={`${style.image_container} ${!children && style.no_children}`}>
+            className={`${style.card} ${!children && style.card_no_children}`}>
+            <div className={style.image_container}>
                 { 
                     item.thumb.map((im:any, key:number) => (
                         <img
                             alt='img'
-                            className={`${style.image} ${key != src && style.hide}`} 
+                            className={`
+                                ${style.image} 
+                                ${!children && style.image_no_children} 
+                                ${key != src && style.hide}
+                                ${thumbCover && style.image_contain}
+                            `} 
                             src={im}>
                         </img>
                     ))
