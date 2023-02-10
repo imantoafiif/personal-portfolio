@@ -162,7 +162,7 @@ const Project = () => {
                                         <div className={style.container}>
                                             <img 
                                                 className={style.vendor}
-                                                src={item.vendor || item.thumb} >
+                                                src={item.vendor} >
                                             </img>
                                             <div className={style.project}>
                                                 <h4 className="is-marginless">{ item.title }</h4>
