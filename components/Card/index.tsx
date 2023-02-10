@@ -1,4 +1,4 @@
-import { Children, MouseEventHandler, useEffect, useState } from 'react'
+import { Children, MouseEventHandler, useEffect, useLayoutEffect, useState } from 'react'
 import style from './Card.module.css'
 import React from 'react'
 
@@ -10,25 +10,18 @@ interface props {
 
 const Card = ({ children = null, item, onClick }: props) => {
 
-    // React.useEffect(() => {
-    //     let img = document.getElementById("im-1")
-    //     img.classList.add(style.image)
-    //     return {
-
-    //     }
-    // }, [])
-
-    const [active, setActive] = useState(0)
+    const [src, setSrc] = useState(0)
 
     useEffect(() => {
         const slide = setTimeout(() => {
-            const img = document.getElementById('slide-1') as HTMLElement
-            img.classList.add(style.appear)
-        }, 2000)
+            let s = src + 1
+            if(s > item.thumb.length - 1) s = 0
+            setSrc(s)
+        }, 4000)
         return () => {
             clearTimeout(slide)
         }
-    }, [active])
+    }, [src])
 
     return (
         <a 
@@ -36,27 +29,20 @@ const Card = ({ children = null, item, onClick }: props) => {
             target="_blank"
             href={item.url} 
             className={style.card}>
-            <div className={style.image_container}>
+            <div className={`${style.image_container} ${!children && style.no_children}`}>
                 { 
-                    [
+                    item.thumb.map((im:any, key:number) => (
                         <img
-                            id="slide-1"
                             alt='img'
-                            className={style.image} 
-                            src={item.thumb}>
-                        </img>,
-                    ]
+                            className={`${style.image} ${key != src && style.hide}`} 
+                            src={im}>
+                        </img>
+                    ))
                 }
             </div>
             {
                 children && (
                     <div className={style.title_container}>
-                        {/* <h3 className={style.title}>
-                            { item.title }
-                        </h3> */}
-                        {/* <p className={style.card_description}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        </p> */}
                         { children }
                     </div>
                 )

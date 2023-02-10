@@ -7,7 +7,7 @@ import style from './Work.module.css'
 const Experience = () => {
 
     interface company {
-        thumb: string,
+        thumb: string[],
         title: string,
         url: string,
         date: string,
@@ -17,7 +17,7 @@ const Experience = () => {
 
     const companies:ReadonlyArray<company> = [
         { 
-            thumb: 'https://idpro.id/wp-content/uploads/2016/12/Logo-Baru-telkomsigma.jpg', 
+            thumb: ['https://idpro.id/wp-content/uploads/2016/12/Logo-Baru-telkomsigma.jpg'], 
             title: 'Telkomsigma', 
             url: 'https://www.telkomsigma.co.id/',
             date: 'April 2019 - Present',
@@ -25,7 +25,7 @@ const Experience = () => {
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         },
         { 
-            thumb: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Alcatel_Lucent_Enterprise_Logo.svg', 
+            thumb: ['https://upload.wikimedia.org/wikipedia/commons/7/7d/Alcatel_Lucent_Enterprise_Logo.svg'], 
             title: 'Alcatel-Lucent Enterprise', 
             url: 'https://www.al-enterprise.com/',
             date: 'Jan 2018 - Mar 2018',
@@ -33,7 +33,7 @@ const Experience = () => {
             desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit',
         },
         { 
-            thumb: 'https://maxsi.id/web/wp-content/uploads/2021/07/logo-telkomsel-baru.png', 
+            thumb: ['https://maxsi.id/web/wp-content/uploads/2021/07/logo-telkomsel-baru.png'], 
             title: 'Telkomsel', 
             url: 'https://www.telkomsel.com',
             date: 'Jan 2016 - Feb 2016',
