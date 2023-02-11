@@ -50,3 +50,22 @@
     background: white;
     box-shadow: 0px 0px 8px 5px rgba(50, 50, 50, .1);
 }
+
+@media screen and (max-width: 992px) {
+    .collections {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .collections {
+        grid-template-columns: 100%;
+        width: 95%;
+    }
+}

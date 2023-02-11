@@ -2,16 +2,20 @@ import style from './Home.module.css'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
+import Image from 'next/image'
+
+import linkedin from '../public/linkedin.png'
+import gmail from '../public/gmail.png'
+import telegram from '../public/telegram.png'
+import github from '../public/github-logo.png'
 
 const Home = () => {
 
   const socmeds = [
-    { src: 'https://github.com/imantoafiif', logo: '/github-logo.png', alt: 'Github' },
-    { src: 'https://id.linkedin.com/in/afiif-imanto-a46a7314b', logo: '/linkedin.png', alt: 'Linkedin' },
-    // { src: 'https://www.instagram.com/imantoafiif', logo: '/instagram.png', alt: 'instagram' },
-    // { src: 'https://www.facebook.com/imanto.afiif', logo: '/facebook.png', alt: 'facebook' },
-    { src: 'mailto:imantoafiif@gmail.com', logo: '/gmail.png', alt: 'Gmail' },
-    { src: 'https://t.me/imantoafiif', logo: '/telegram.png', alt: 'Telegram' },
+    { src: 'https://github.com/imantoafiif', logo: github, alt: 'Github' },
+    { src: 'https://id.linkedin.com/in/afiif-imanto-a46a7314b', logo: linkedin, alt: 'Linkedin' },
+    { src: 'mailto:imantoafiif@gmail.com', logo: gmail, alt: 'Gmail' },
+    { src: 'https://t.me/imantoafiif', logo: telegram, alt: 'Telegram' },
   ]
 
   return (
@@ -26,24 +30,28 @@ const Home = () => {
             </img>
             <div className={style.socmed_container}>
               {
-                socmeds.map(item => (
-                  <a
-                    className={style.socmed}
-                    href={item.src} 
-                    target="_blank">
-                    <img 
-                      title={item.alt}
-                      alt={item.alt}
-                      src={item.logo}>
-                    </img>
-                  </a>
-                ))
+                socmeds.map(item => {
+                  return (
+                    <a
+                      className={style.socmed}
+                      href={item.src} 
+                      target="_blank">
+                      <Image
+                        width={500}
+                        height={500}
+                        title={item.alt}
+                        alt={item.alt}
+                        src={item.logo}>
+                      </Image>
+                    </a>
+                  )
+                })
               }
             </div>
           </>
         </Banner>          
         <section className={style.body_content}>
-        
+
           <h2 className={style.title}>
             Hi, i'm Afiif Imanto
           </h2>

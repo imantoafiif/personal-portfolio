@@ -1,48 +1,55 @@
-import { Children } from 'react'
+import { Children, MouseEventHandler, useEffect, useLayoutEffect, useState } from 'react'
 import style from './Card.module.css'
 import React from 'react'
 
 interface props {
     children?: JSX.Element | null,
     item: any,
+    onClick?: any,
+    thumbCover?: boolean,
 }
 
-const Card = ({ children = null, item }: props) => {
+const Card = ({ children = null, item, onClick, thumbCover = false }: props) => {
 
-    // React.useEffect(() => {
-    //     let img = document.getElementById("im-1")
-    //     img.classList.add(style.image)
-    //     return {
+    const [src, setSrc] = useState(0)
 
-    //     }
-    // }, [])
+    useEffect(() => {
+        const slide = setTimeout(() => {
+            let s = src + 1
+            if(s > item.thumb.length - 1) s = 0
+            setSrc(s)
+        }, 4000)
+        return () => {
+            clearTimeout(slide)
+        }
+    }, [src])
 
     return (
         <a 
+            onClick={onClick}
             target="_blank"
             href={item.url} 
-            className={style.card}>
+            className={`${style.card} ${!children && style.card_no_children}`}>
             <div className={style.image_container}>
                 { 
-                    [
+                    item.thumb.map((im:any, key:number) => (
                         <img
                             alt='img'
-                            className={style.image} 
-                            src={item.thumb}>
-                        </img>,
-                    ]
+                            className={`
+                                ${style.image} 
+                                ${!children && style.image_no_children} 
+                                ${key != src && style.hide}
+                                ${thumbCover && style.image_contain}
+                            `} 
+                            src={im}>
+                        </img>
+                    ))
                 }
             </div>
             {
                 children && (
                     <div className={style.title_container}>
-                        {/* <h3 className={style.title}>
-                            { item.title }
-                        </h3> */}
-                        {/* <p className={style.card_description}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        </p> */}
-                        { children } 
+                        { children }
                     </div>
                 )
             }
