@@ -21,14 +21,14 @@ const Home = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Banner>
+      <Banner responsive={true}>
           <>
             <img
               title='avatar'
               className={style.avatar} 
               src='https://media.licdn.com/dms/image/D5603AQFBH48M5DNceQ/profile-displayphoto-shrink_800_800/0/1671704555138?e=1680134400&v=beta&t=HhKFh-Z1lKgfx0L9xx4jlNSjC_KgvSKTS0UlLBg_5Lc'>
             </img>
-            <div className={style.socmed_container}>
+            {/* <div className={style.socmed_container}>
               {
                 socmeds.map(item => {
                   return (
@@ -47,7 +47,7 @@ const Home = () => {
                   )
                 })
               }
-            </div>
+            </div> */}
           </>
         </Banner>          
         <section className={style.body_content}>
@@ -56,10 +56,9 @@ const Home = () => {
             Hi, i'm Afiif Imanto
           </h2>
           <h1 className={style.subtitle}>
-            FRONTEND&nbsp;
-            <b className={style.normal_weight}>ENGINEER</b>
+            FRONTEND&nbsp;ENGINEER
+            {/* <b className={style.normal_weight}>ENGINEER</b> */}
           </h1>
-          
           <p className={style.about}>
             Indonesian based hustler, tech enthusiast, learner by heart 
             and a web developer with 4+ years of experience 
@@ -69,9 +68,32 @@ const Home = () => {
             in developing user centric systems for companies in various 
             industries
           </p>
+          <h1>Get in touch with me</h1>
+          <div className={style.socmed_container}>
+            {
+              socmeds.map(item => {
+                return (
+                  <a
+                    className={style.socmed}
+                    href={item.src} 
+                    target="_blank">
+                    <Image
+                      width={500}
+                      height={500}
+                      title={item.alt}
+                      alt={item.alt}
+                      src={item.logo}>
+                    </Image>
+                  </a>
+                )
+              })
+            }
+          </div>
+          
           <button className={style.resume_button}>
             my resume
           </button>
+          
           {/* <button className={style.resume_button}>
             Get this site
           </button> */}

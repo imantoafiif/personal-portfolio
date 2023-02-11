@@ -3,12 +3,12 @@
 .avatar {
     top: 45px;
     width: 300px;
-    height: 300px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     position: relative;
-    border: 10px solid #fff;
-    box-shadow: 0px 0px 15px 5px rgba(50, 50, 50, .4);
+    border: 8px solid #fff;
+    /* box-shadow: 0px 0px 15px 5px rgba(50, 50, 50, .4); */
 }
 
 .body_content {
@@ -21,7 +21,7 @@
     margin-bottom: 0;
     font-size: 40px;
     letter-spacing: -.025em;
-    font-weight: 600;
+    font-weight: 700;
     /* font-family: 'Arial', 'Courier New', Courier, monospace; */
     font-family: Arial, Helvetica, sans-serif;
     /* letter-spacing: 2px; */
@@ -36,9 +36,11 @@
 }
 
 .subtitle {
-    font-weight: 300;
-    letter-spacing: 4px;
-    margin: 0 12px 0 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0 12px 0 12px;
+    color: rgb(123, 123, 123);
 }
 
 .normal_weight {
@@ -64,20 +66,16 @@
 
 .socmed_container {
     display: flex;
-    justify-content: flex-end;
-    position: absolute;
+    justify-content: center;
     text-align: right;
     width: 100%;
-    bottom: 0;
     gap: 10px;
     padding: 10px 0;
-    right: 10px;
-    bottom: -50px;
 }
 
 .socmed_container a img {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
 }
 
 .resume_button {
@@ -98,4 +96,34 @@
 .resume_button:hover {
    transform: scale(1.02);
    background: #1a66a4;
+}
+
+@media screen and (max-width: 426px) {
+    .avatar { 
+        top: 50px;
+        width: 200px;
+        border: 5px solid #fff;
+    }
+
+    .body_content {
+        padding-top: 35px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .about {
+        margin: 20px 5%;
+        font-size: 16px;
+    }
+
+    .resume_button {
+        transform: scale(.9);
+        margin-top: 12px;
+    }
 }

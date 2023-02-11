@@ -1,12 +1,17 @@
 import style from './Banner.module.css'
 
 interface props {
-    children: JSX.Element
+    children: JSX.Element,
+    responsive?: boolean,
 }
 
-const Banner = ({ children }: props) => {
+const Banner = ({ children, responsive }: props) => {
     return (
-        <div className={style.container}>
+        <div className={
+            responsive ? 
+            style.container_responsive : 
+            style.container
+        }>
            { children }
         </div>
     )
