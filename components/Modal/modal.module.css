@@ -41,6 +41,8 @@
     grid-template-columns: 90% 10%;
     border-bottom: 1px solid #d3d3d3;
     background: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .footer {
@@ -49,6 +51,8 @@
     background: white;
     width: 50%;
     justify-content: end;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .footer_dismiss {
@@ -59,7 +63,7 @@
     width: 15%;
     border-radius: 5px;
     border: 1px solid rgb(212, 212, 212);
-    box-shadow: 0px 0px 8px 2px #d3d3d355;
+    /* box-shadow: 0px 0px 8px 2px #d3d3d355; */
 }
 
 .header_title {
@@ -68,8 +72,17 @@
     margin-left: 16px;
 }
 
+.tech_icon {
+    width: 35px;
+    height: 35px;
+}
+
+.no_margin_top {
+    margin-top: 0;
+}
+
 .modal_content {
-    padding: 0 16px 0 16px;
+    padding: 16px
 }
 
 .header_abort {
@@ -80,10 +93,6 @@
     margin-right: 16px;
 }
 
-.description {
-    text-align: justify;
-}
-
 .screenshot {
     border-radius: 10px;
     width: 100%;
@@ -92,6 +101,12 @@
 
 .active {
     display: flex;
+}
+
+.featured {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 @media screen and (max-width: 992px) {
@@ -119,11 +134,13 @@
     }
     .header {
         width: 100%;
+        border-radius: 0;
     }
     .modal_card {
         height: 100%;
     }
     .footer {
         width: 100%;
+        border-radius: 0;
     }
 }
