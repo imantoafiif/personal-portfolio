@@ -26,8 +26,7 @@ const Modal = ({ active, onClose }) => {
             id="modal-container"    
             className={style.background}>
             <div
-                onClick={a}
-                className={style.modal}>
+                className={style.modal_card}>
                 <div className={style.header}>
                     <h3 className={style.header_title}>
                         Judul Container
@@ -41,23 +40,39 @@ const Modal = ({ active, onClose }) => {
                     </p>
                 </div>
                 <div className={style.modal_body}>
-                    <p className={style.description}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur
-                    </p>
-                    <div>
-                        <img 
-                            className={style.screenshot}
-                            src='https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg'>
-                        </img>
-                        <p>explain screenshot 1</p>
-                        <img 
-                            className={style.screenshot}
-                            src='https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80'>
-                        </img>
-                        <p>explain screenshot 2</p>
-                    </div>
-                    
+                    {
+                        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0 ,0, 0 ,0, 0, 0,0 ,0, 0,0, 0, 0,0, 0,0, 0].map(item => (
+                            <p>abalsk</p>
+                        ))
+                    }
                 </div>
+                {/* <div
+                    onClick={a}
+                    className={style.modal}>
+                    <div className={style.header}>
+                        <h3 className={style.header_title}>
+                            Judul Container
+                        </h3>
+                        <p 
+                            onClick={onClose}
+                            className={style.header_abort}>
+                            <FontAwesomeIcon
+                                icon={faClose}
+                            />
+                        </p>
+                    </div>
+                    <div className={style.modal_body}>
+                        <div className={style.modal_body_container}>
+                            {
+                                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0].map(item => (
+                                    <p className={style.description}>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur
+                                    </p>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </div>
      );

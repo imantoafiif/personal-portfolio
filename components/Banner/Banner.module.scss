@@ -1,10 +1,13 @@
+// $bg-url: url('https://thumbs.dreamstime.com/b/exotic-jakarta-city-night-lights-indonesia-october-aerial-view-glowing-skyscrapers-161186906.jpg');
+$bg-url: url('https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82');
+
 .container {
     background-color: #f2f2f2;
     width: 100%;
     height: 300px;
     text-align: center;
     position: relative;
-    background-image: url('https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82');
+    background-image: $bg-url;
     /* background:linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url(https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82); */
     background-size: cover;
 }
@@ -15,8 +18,15 @@
     height: 300px;
     text-align: center;
     position: relative;
-    background-image: url('https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82');
+    background-image: $bg-url;
+    // background-image: url('https://static.licdn.com/sc/h/5q92mjc5c51bjlwaj3rs9aa82');
     background-size: cover;
+}
+
+.custom_github_button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 @media screen and (max-width: 426px) {

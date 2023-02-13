@@ -11,19 +11,37 @@
     align-items: center;
 }
 
+.modal_card {
+    background: rgba(0, 0, 0, 0.326);
+    height: 90%;
+    width: 100%;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal_body {
+    background: white;
+    /* height: 100%; */
+    width: 50%;
+    overflow-y: auto;
+}
+
 .modal {
     width: 769px;
     background-color: white;
-    margin: 15px;
+    /* margin: 15px; */
     border-radius: 20px;
     display: block;
 }
 
 .header {
     display: grid;
-    width: 100%;
-    grid-template-columns: 70% 30%;
+    width: 50%;
+    grid-template-columns: 90% 10%;
     border-bottom: 1px solid #d3d3d3;
+    background: white;
 }
 
 .header_title {
@@ -38,10 +56,6 @@
     align-items: center;
     justify-content: end;
     margin-right: 16px;
-}
-
-.modal_body {
-    margin: 12px;
 }
 
 .description {
