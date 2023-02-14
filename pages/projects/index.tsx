@@ -147,7 +147,7 @@ const Project = () => {
                         <div className={style.header_content}>
                             <h1 className={style.title}>Projects</h1>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam lorem ipsum dolor sit amet, consectetur
+                                These are some of the formal projects that i have completed in the past for clients both state-owned and private enterprises
                             </p>
                         </div>
                     </div>
