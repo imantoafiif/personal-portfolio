@@ -74,6 +74,7 @@ const Home = () => {
               socmeds.map(item => {
                 return (
                   <a
+                    key={item.alt}
                     className={style.socmed}
                     href={item.src} 
                     target="_blank">
