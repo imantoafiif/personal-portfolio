@@ -76,7 +76,6 @@ const Modal = ({ active, onClose }) => {
                                     socmeds.map(item => {
                                         return (
                                         <a
-                                            className={style.socmed}
                                             href={item.src} 
                                             target="_blank">
                                             {/* <Image

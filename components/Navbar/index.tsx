@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faBars,
 } from "@fortawesome/free-solid-svg-icons";  
+import { useContext, useEffect } from 'react';
 
 const Navbar = () => {
 
@@ -12,7 +13,6 @@ const Navbar = () => {
         { label: 'STACKS', url: '/stacks' },
         { label: 'WORK', url: '/work' },
         { label: 'PROJECTS', url: '/projects' },
-        
     ]
 
     const onClick = () => {

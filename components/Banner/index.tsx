@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import style from './Banner.module.scss'
 
 interface props {
