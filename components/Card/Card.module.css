@@ -9,6 +9,7 @@
     margin: 10px;
     transition: all ease .15s;
     height: 100%;
+    cursor: pointer;
 }
 
 .card_no_children {
