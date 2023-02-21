@@ -6,7 +6,7 @@ const handler = async (
     res: NextApiResponse,
 ) => {
 
-    const uri = 'mongodb+srv://MASTERADMIN:admin@portfolio-data.7enq2mj.mongodb.net/test'
+    const uri = ''
     const client = new MongoClient(uri)
     
     const db = await client.db('web-porto')
