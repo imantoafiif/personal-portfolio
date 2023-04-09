@@ -1,4 +1,5 @@
-import style from './Banner.module.css'
+import { useEffect } from 'react'
+import style from './Banner.module.scss'
 
 interface props {
     children: JSX.Element,
@@ -12,6 +13,7 @@ const Banner = ({ children, responsive }: props) => {
             style.container_responsive : 
             style.container
         }>
+            {/* <a className="github-button" href="https://github.com/imantoafiif/personal-portfolio" data-color-scheme="no-preference: light; light: light; dark: light;" data-show-count="true" aria-label="Star imantoafiif/personal-portfolio on GitHub">Star</a> */}
            { children }
         </div>
     )

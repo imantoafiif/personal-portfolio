@@ -56,7 +56,7 @@ const Home = () => {
             Hi, i'm Afiif Imanto
           </h2>
           <h1 className={style.subtitle}>
-            FRONTEND&nbsp;ENGINEER
+            I'm a Frontend Engineer
             {/* <b className={style.normal_weight}>ENGINEER</b> */}
           </h1>
           <p className={style.about}>
@@ -74,6 +74,7 @@ const Home = () => {
               socmeds.map(item => {
                 return (
                   <a
+                    key={item.alt}
                     className={style.socmed}
                     href={item.src} 
                     target="_blank">

@@ -61,7 +61,6 @@ const Experience = () => {
                                 let { thumb, title, url } = c
                                 return (
                                     <Card 
-                                        key={key}
                                         item={{ thumb, title, url }}
                                         thumbCover={true}>
                                         <>
