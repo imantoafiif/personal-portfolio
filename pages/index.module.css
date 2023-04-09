@@ -1,0 +1,34 @@
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.bg_vid {
+    width: 100%; 
+    height: 100vh; 
+    min-height: 100%; 
+    object-fit: cover;
+}
+
+.container_overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.internal_container {
+    padding: 0 30px;
+}

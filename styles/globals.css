@@ -2,11 +2,9 @@
 
 html,
 body {
-  max-width: 100vw;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
 }
 
 .is-marginless {
