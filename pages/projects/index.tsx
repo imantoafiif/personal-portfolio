@@ -27,10 +27,9 @@ const Project = () => {
     const projects:ReadonlyArray<card> = [
         { 
             thumb: [
-                'https://lh3.google.com/u/0/d/1yx8clJJZ6oRqHrz694a94OIXOegHEa-D=w3092-h2134-iv1',
-                'https://lh3.google.com/u/0/d/1IwaJ_dtY-uTxfEzpbuTIIKnCfhj5NFCd=w3092-h2134-iv1',
-                'https://lh3.google.com/u/0/d/1It6jW7iO9LCcgRUujkuuV60WiB1uOvZD=w3092-h2134-iv1',
-
+                '/cards/projects/1.jpg',
+                '/cards/projects/2.jpg',
+                '/cards/projects/3.jpg',
             ],
             title: 'Integrated Talent Management System',
             url: null,

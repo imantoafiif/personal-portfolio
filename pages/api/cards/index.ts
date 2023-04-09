@@ -6,13 +6,13 @@ const handler = async (
     res: NextApiResponse,
 ) => {
 
-    const uri = 'mongodb+srv://MASTERADMIN:admin@portfolio-data.7enq2mj.mongodb.net/test'
+    const uri = 'mongodb+srv://MASTERADMIN:6NJyhkq5gCYMq5n6@portfolio-data.7enq2mj.mongodb.net/test'
     const client = new MongoClient(uri)
-    
+
     const db = await client.db('web-porto')
     const collections = await db.collection('Cards')
 
-    const cursor = await collections.find({})
+    const cursor = await collections.find({ title: 'React.js' }).toArray()
 
     // let data:any = []
 
@@ -27,18 +27,16 @@ const handler = async (
 
     // await client.close()
 
-    const cursorJson = await cursor.toArray()
-
     let data = {
-        data: cursorJson,
+        data: !!cursor.length ? cursor : null,
         meta: {
             pagination: {
-                total: cursorJson.length
+                total: cursor.length
             }
         }
     }
 
-    cursor.close()
+    client.close()
 
     res.status(200).json(data)
 

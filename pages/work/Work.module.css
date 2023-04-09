@@ -1,6 +1,6 @@
 .collections {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     width: 80%;
     align-items: center;
     margin: 0 auto;
