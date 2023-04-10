@@ -12,8 +12,23 @@ const index = () => {
         { title: 'Front-end Developer', icon: 'fas fa-laptop', desc: 'The new common language will be more simple and regular than. It will be more Occidental in fact' },
         { title: 'Back-end Developer', icon: 'fas fa-database', desc: 'The new common language will be more simple and regular than. It will be more Occidental in fact' },
         { title: 'Mobile App Developer', icon: 'fas fa-mobile-phone', desc: 'The new common language will be more simple and regular than. It will be more Occidental in fact' },
-
     ]
+
+    const educations = [
+        { 
+            title: 'Bachelor of Informatics Engineering',
+            company: 'University of Sriwijaya',
+            detail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text',
+            url: 'https://pelajarinfo.id/wp-content/uploads/2022/10/Universitas-Sriwijaya-Logo.png'
+        },
+        { 
+            title: 'University Exchange Programme',
+            company: 'Universiti Teknologi Malaysia',
+            detail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text',
+            url: 'https://upload.wikimedia.org/wikipedia/commons/8/81/UTM-LOGO.png'
+        },
+    ]
+
     const roles = [
         'developer',
         'Front-end',
@@ -119,43 +134,41 @@ const index = () => {
                     <p className={style.sub}>A summary of my resume</p>
                     <div className={style.summary_container}>
                         <div className={style.summary}>
-                            <h2>My Education</h2>
+                            <h2>Educations</h2>
                             <div className={style.summary_items}>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
+                                {
+                                    educations.map(item => (
+                                        <div className={style.summary_items_container}>
+                                            <img
+                                                className={style.summary_logo} 
+                                                src={item.url}></img>
+                                            <div className={style.summary_details}>
+                                                <h2>{item.title}</h2>
+                                                <p>{item.company}</p>
+                                                <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
                         <div className={style.summary}>
-                            <h2>My Experience</h2>
+                            <h2>Experiences</h2>
                             <div className={style.summary_items}>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
-                                <div className={style.summary_items_container}>
-                                    <h2>Master in Computer Engineering</h2>
-                                    <p>Harvard University / 2015 - 2017</p>
-                                    <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
-                                </div>
+                                {
+                                    [0, 0, 0].map(item => (
+                                        <div className={style.summary_items_container}>
+                                            <img
+                                                className={style.summary_logo} 
+                                                src='https://pelajarinfo.id/wp-content/uploads/2022/10/Universitas-Sriwijaya-Logo.png'></img>
+                                            <div className={style.summary_details}>
+                                                <h2>Master in Computer Engineering</h2>
+                                                <p>Harvard University / 2015 - 2017</p>
+                                                <p className={style.summary_desc}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
                         </div>
                     </div>

@@ -247,19 +247,40 @@
 }
 
 .summary_items_container {
-    display: block;
-    border-bottom: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* border-bottom: 1px solid #d3d3d3; */
     padding: 16px 0;
+    /* border-left: 2px solid #d3d3d3; */
+    padding-left: 16px;
+}
+
+.summary_details {
+    display: block;
+    /* border-bottom: 1px solid #d3d3d3; */
+}
+
+.summary_logo {
+    width: 90px;
+    height: auto;
+    margin-right: 24px;
 }
 
 .summary_items_container h2 {
     font-size: 1.3125rem !important;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .summary_items_container p {
     margin-top: 0;
     margin-bottom: 12px;
     line-height: 1.8;
+}
+
+.summary_items_container div {
 }
 
 .summary_desc {
