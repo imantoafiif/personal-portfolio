@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
 .hero_container {
+    font-family: Poppins, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +12,7 @@
 
 .avatar {
     border-radius: 50%;
+    border: 12px solid white;
 }
 
 .bg_vid {
@@ -21,7 +25,7 @@
 .container_overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.637);
+    background: rgba(0, 0, 0, 0.81);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -30,5 +34,60 @@
 }
 
 .internal_container {
-    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.status {
+    display: block;
+}
+
+.title {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 0;
+    line-height: .5;
+}
+
+
+.subtitle {
+    color: white;
+    font-weight: 300;
+    font-size: 21px;
+    margin: 0;
+    line-height: 1;
+}
+
+.status h2 {
+    margin: 12px 0;
+    font-weight: 700px;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.button {
+    background: white;
+    font-size: 16px;
+    margin-top: 50px;
+    border: none;
+    font-weight: 700;
+    padding: 15px 45px;
+}
+
+.blip {
+    animation: blip 1s step-end;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blip {
+    0% { opacity: 0; }
+    50% { opacity: 1; } 
+    0% { opacity: 0; }    
 }
