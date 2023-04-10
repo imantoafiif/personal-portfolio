@@ -16,10 +16,11 @@ const index = () => {
     ]
 
     useEffect(() => {
-        const timer = setInterval(type, (write ? 200 : 30))
+        const seed = Math.floor(50 + Math.random() * 400)
+        const timer = setInterval(type, (write ? seed : 30))
         setTimeout(() => {
             clearInterval(timer);
-        }, (write ? 200 : 30));
+        }, (write ? seed : 30));
     }, [role, write, id])
 
     const type = () => {
@@ -38,7 +39,6 @@ const index = () => {
         } else {
             setRole(role + roles[id].charAt(role.length))
         }   
-        console.log(role)
     }
 
     return (
@@ -56,7 +56,7 @@ const index = () => {
                             <p className={style.title}>hi, i'm <strong>afiif imanto</strong>
                             </p>
                             <h2>a { role }<span className={style.blip}>|</span></h2>
-                            <p className={style.subtitle}>based in Palembang, Indonesia</p>
+                            <p className={style.subtitle}>based in Jakarta, Indonesia</p>
                             <button className={style.button}>Download CV</button>
                         </div>
                         <img
