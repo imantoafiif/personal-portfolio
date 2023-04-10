@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@8s00&display=swap');
 
 .hero_container {
     font-family: Poppins, Helvetica, sans-serif;
@@ -8,11 +9,12 @@
     align-items: center;
     height: 100vh;
     position: relative;
+    background: white;
 }
 
 .avatar {
     border-radius: 50%;
-    border: 12px solid white;
+    /* border: 6px solid white; */
 }
 
 .bg_vid {
@@ -20,6 +22,7 @@
     height: 100vh; 
     min-height: 100%; 
     object-fit: cover;
+    position: fixed;
 }
 
 .container_overlay {
@@ -38,11 +41,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 70%;
+    color: white;
 }
 
 .status {
     display: block;
+    /* text-align: center; */
 }
 
 .title {
@@ -65,7 +70,7 @@
 
 .status h2 {
     margin: 12px 0;
-    font-weight: 700px;
+    font-weight: 800px;
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -79,11 +84,186 @@
     border: none;
     font-weight: 700;
     padding: 15px 45px;
+    cursor: pointer;
 }
 
 .blip {
     animation: blip 1s step-end;
     animation-iteration-count: infinite;
+}
+
+.content {
+    font-family: 'Raleway', sans-serif;
+    background: white;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.content:nth-child(2n - 1) {
+    background: rgb(245 245, 245);
+}
+
+.content_container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* background-image: url('https://preetheme.com/html/cwt/cwt/assets/img/hire-area.jpg'); */
+
+}
+
+.content_container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 12px 0;
+    text-transform: capitalize;
+}
+
+.content_container p {
+    margin: 50px 0;
+}
+
+.socmeds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.socmeds img {
+    width: 30px;
+    height: auto;
+}
+
+.work_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.work_container p {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}   
+
+.work_container h4 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.activity_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+.work_item_head {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: #777777;
+    padding: 0px 30px;
+    color: white;
+    font-size: 24px;
+}
+
+.sub {
+    margin: 0 !important;
+    color: #777777;
+}
+
+.work_item_content {
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.work_item_content p {
+    font-weight: 300;
+}
+
+.work_item_content:hover {
+    color: white;
+}
+
+.work_item_content:hover .bg_interactive {
+    width: 100%;
+}
+
+.bg_interactive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #888888;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all .3s ease;
+}
+
+.container_work {
+    background-image: url(https://preetheme.com/html/cwt/cwt/assets/img/hire-area.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.summary_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    width: 70%;
+}
+
+.summary h2 {
+    font-size: 1.75rem;
+    text-align: left !important;
+}
+
+.summary_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary_items_container {
+    display: block;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 16px 0;
+}
+
+.summary_items_container h2 {
+    font-size: 1.3125rem !important;
+}
+
+.summary_items_container p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.summary_desc {
+    color: #7c7c7c;
 }
 
 @keyframes blip {
